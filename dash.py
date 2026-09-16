@@ -11,7 +11,7 @@ st.set_page_config(layout="wide")
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('data/'sme_salary_benchmarks.csv')
+        df = pd.read_csv('data/sme_salary_benchmarks.csv')
         return df
     except FileNotFoundError:
         st.error("Could not find 'sme_salary_benchmarks.csv'.")
